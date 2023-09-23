@@ -13,7 +13,9 @@ function GalleryItem({ item }) {
   const handleLike = () => {
     axios
       .put(`/gallery/like/${item.id}`)
-      .then((response) => {})
+      .then((response) => {
+        item.onLike;
+      })
       .catch((error) => {
         console.log("Error liking the image", error);
       });
@@ -31,6 +33,7 @@ function GalleryItem({ item }) {
           onClick={toggleDescription}
         />
       )}
+
       <button onClick={handleLike}>Like</button>
       <p>{item.likes} likes</p>
     </div>

@@ -27,7 +27,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList gallery={galleryData} />
+      <GalleryList gallery={galleryData} onLike={fetchGalleryData} />
     </div>
   );
 } // end App

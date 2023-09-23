@@ -6,7 +6,7 @@ function GalleryList({ gallery }) {
   return (
     <div>
       {gallery.map((item) => (
-        <GalleryItem key={item.id} item={item} />
+        <GalleryItem key={item.id} item={item} onLike={item.onLike} />
       ))}
     </div>
   );
