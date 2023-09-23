@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./GalleryItem.css";
 
-function GalleryItem({ item }) {
+function GalleryItem({ item, onLike }) {
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
 
   const toggleDescription = () => {
@@ -14,7 +14,7 @@ function GalleryItem({ item }) {
     axios
       .put(`/gallery/like/${item.id}`)
       .then((response) => {
-        item.onLike;
+        onLike();
       })
       .catch((error) => {
         console.log("Error liking the image", error);
