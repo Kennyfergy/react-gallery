@@ -22,7 +22,7 @@ function GalleryItem({ item, onLike }) {
   };
 
   return (
-    <div>
+    <div className="gallery-item-container">
       {isDescriptionVisible ? (
         <p onClick={toggleDescription}>{item.description}</p>
       ) : (
@@ -33,9 +33,10 @@ function GalleryItem({ item, onLike }) {
           onClick={toggleDescription}
         />
       )}
-
-      <button onClick={handleLike}>Like</button>
-      <p>{item.likes} likes</p>
+      <div className="like-container">
+        <button onClick={handleLike}>Like</button>
+        <p className="like-badge">{item.likes} likes</p>
+      </div>
     </div>
   );
 }

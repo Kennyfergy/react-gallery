@@ -2,14 +2,45 @@
   text-align: center;
 }
 
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #818e9c;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .App-header {
-  background-color: #222;
-  padding: 1em;
+  background-color: #4b6786;
   color: white;
-  margin-bottom: 1em;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: none;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  color: #292727;
 }
-
