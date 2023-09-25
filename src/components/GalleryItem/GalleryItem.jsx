@@ -24,7 +24,9 @@ function GalleryItem({ item, onLike }) {
   return (
     <div className="gallery-item-container">
       {isDescriptionVisible ? (
-        <p onClick={toggleDescription}>{item.description}</p>
+        <p className="description" onClick={toggleDescription}>
+          {item.description}
+        </p>
       ) : (
         <img
           className="gallery-image"

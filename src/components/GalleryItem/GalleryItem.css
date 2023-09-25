@@ -66,3 +66,11 @@ button:active {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 5px;
 }
+.description {
+  color: rgb(41, 40, 40);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  cursor: zoom-out;
+}
